@@ -1,0 +1,7 @@
+numbers_list  =  [1, 1, 0, 5, 6, 8, 9, 156, 1515151515, 89, 62, 5, 89, 45, 3, 3]
+s = set(numbers_list)
+zoradene = sorted(s)
+print(zoradene)
+
+
+
