@@ -1,0 +1,4 @@
+premenna = float(input("zadaj číslo"))
+if premenna % 7 == 0:
+    print ("ano")
+else: print("nie")
