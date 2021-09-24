@@ -1,0 +1,7 @@
+a = 5
+b = 5
+c = 8
+sucet = a + b + c
+print(f"súčet čísel je {sucet}" )
+if a*a*a == a*b*c:
+    print(f"čísla sú rovnaké, 3-násobná hodnota ich súčtu je {9*a} ")
