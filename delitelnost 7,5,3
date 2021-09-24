@@ -1,0 +1,8 @@
+premenna = int(input("zadaj celé číslo"))
+if premenna % 7 == 0:
+    print("číslo je deliteľné číslom 7")
+elif premenna % 5 == 0:
+    print("číslo je deliteľné číslom 5")
+elif premenna % 3 == 0:
+    print("číslo je deliteľné číslom 3")
+else: print("zadané číslo nie je deliteľné číslom 7, 5, ani 3")
