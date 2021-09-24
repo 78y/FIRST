@@ -1,0 +1,4 @@
+premenna = int(input("zadaj celé číslo"))
+if premenna   % 2 == 0:
+    print("áno")
+else: print("nie")
