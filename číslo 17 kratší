@@ -1,0 +1,10 @@
+premenna =0
+rozdiel = 17 - premenna
+if premenna < 0:
+    print(f" rozdiel čísel je väčší ako 17.....rozdiel čísel je {rozdiel}....druhá mocnina rozdielu je {rozdiel*rozdiel}")
+elif 0 < premenna < 17:
+    print(f" rozdiel čísel je menší ako 17.....rozdiel čísel je {rozdiel}....druhá mocnina čísla je {rozdiel*rozdiel}")
+elif 17 < premenna < 34:
+    print(f" rozdiel čísel je menší ako 17.....rozdiel čísel je {premenna-17}....druhá mocnina čísla je {rozdiel*rozdiel}")
+elif premenna > 34:
+    print(f" rozdiel čísel je väčší ako 17.....rozdiel čísel je {premenna-17}....druhá mocnina čísla je {rozdiel * rozdiel}")
