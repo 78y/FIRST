@@ -1,0 +1,17 @@
+n = int(input("Zadaj číslo: "))
+print(n)
+delitele = []
+d = 0
+while d < n-1:
+    d +=1
+    delitele.append(d)
+print(delitele)
+delitele.pop(0)
+print(delitele)
+for i in delitele:
+    x= n % i
+    if x % i ==0:
+        print("číslo nie je prvočíslo")
+        break
+    print(x)
+print("číslo je prvočíslo")
