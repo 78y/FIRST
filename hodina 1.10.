@@ -75,3 +75,18 @@ def suma(vstup):
 vstup = list(range(50))
 vystup = suma(vstup)
 print(f'Suma je: {vystup}')
+
+🥨
+#vajíčko
+
+def kolko_vajíčok(n):
+    n = počet
+    if počet == 1:
+        print(f"{počet} vajíčko")
+    elif 1 < počet < 5:
+        print(f"{počet} vajíčka")
+    else:
+        print(f"{počet} vajíčok")
+počet = int(input("zadaj počet"))
+
+kolko_vajíčok(počet)
