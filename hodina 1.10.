@@ -90,3 +90,15 @@ def kolko_vajíčok(n):
 počet = int(input("zadaj počet"))
 
 kolko_vajíčok(počet)
+
+🥨
+def kolko_vajíčok(n):
+    if n == 1:
+        print(f"{n} vajíčko")
+    elif 1 < n < 5:
+        print(f"{n} vajíčka")
+    else:
+        print(f"{n} vajíčok")
+    return
+
+kolko_vajíčok(1)
