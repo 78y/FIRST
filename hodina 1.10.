@@ -1,0 +1,77 @@
+# rôzne spôsoby vypisovania stringov🥨
+x = input("Zadaj hodnotu x = ")
+y = input("Zadaj hodnotu y = ")
+print(f"Výsledok je  {int(x) + int(y)}")
+result = int(x) + int(y)
+print('Vysledek je {}'.format(result))
+print('Vysledek je %d' % result)    #
+
+🥨
+pizza1prumer = 33
+pizza1cena = 180
+pizza2prumer = 35
+pizza2cena = 190
+pizza3prumer = 32
+pizza3cena = 170
+
+pi = 3.14159
+
+#polomer = prumer/2
+#povrch pizzy = pi*polomer*polomer
+
+def povrch(prumer):
+    return pi*(prumer/2)*(prumer/2)
+
+pizza1povrch = povrch(pizza1prumer)
+pizza2povrch = povrch(pizza2prumer)
+pizza3povrch = povrch(pizza3prumer)
+
+
+pizza1povrch = pi*(pizza1prumer/2)*(pizza1prumer/2)
+print(f"Povrch pizzy c.1 je {pizza1povrch}")
+pizza2povrch = pi*(pizza2prumer/2)*(pizza2prumer/2)
+print(f"Povrch pizzy c.2 je {pizza2povrch}")
+pizza3povrch = pi*(pizza3prumer/2)*(pizza3prumer/2)
+print(f"Povrch pizzy c.3 je {pizza3povrch}")
+
+pizza1pomer = pizza1povrch /pizza1cena
+pizza2pomer = pizza2povrch /pizza2cena
+pizza3pomer = pizza3povrch /pizza3cena
+print(f"Pomer povrch/cena pizzy c. 1 je {pizza1pomer}")
+print(f"Pomer povrch/cena pizzy c. 2 je {pizza2pomer}")
+print(f"Pomer povrch/cena pizzy c. 3 je {pizza3pomer}")
+
+🥨# suma
+lst = [] # 1, 2, 3, 4 ,5, 6, 7, 8 ,9
+lst = list(range(10))
+# suma = 1+2+3+4+5+6+7+8+9
+
+lst.remove(0)
+#lst = lst
+
+print(lst)
+
+suma = 0
+for n in lst:
+    suma = suma + n
+print(suma)
+
+lst = list(range(10,20))
+print(lst)
+
+suma = 0
+for i in range(len(lst)):
+    suma += lst[i] # suma = suma + lst[i]
+print(suma)
+
+🥨
+def suma(vstup):
+    suma = 0
+    for n in vstup:
+        suma = suma + n
+    vystup = suma
+    return vystup
+
+vstup = list(range(50))
+vystup = suma(vstup)
+print(f'Suma je: {vystup}')
