@@ -1,0 +1,137 @@
+"""suma = int(input("zadaj čiastku: "))
+str(suma)
+print(suma)
+list[suma]
+print(suma)
+print(suma[0])"""
+
+
+"""
+def suma(x):
+    str(x)
+    list({x})"""
+
+x = "1424897"
+print(list(x))
+pocet = len(x)
+print(f"počet číslic je {pocet}")
+
+if pocet < 5:
+
+    if x[-1] == "1":
+        print(f"počet 1-korunáčiek je 1")
+    elif x[-1] == "2":
+        print(f"počet 2-korunáčiek je 1")
+    elif x[-1] == "3":
+        print(f"počet 1-korunáčiek je 1")
+        print(f"počet 2-korunáčiek je 1")
+    elif x[-1] == "4":
+        print(f"počet 2-korunáčiek je 2")
+    elif x[-1] == "5":
+        print(f"počet 5-korunáčiek je 1")
+    elif x[-1] == "6":
+        print(f"počet 1-korunáčiek je 1")
+        print(f"počet 5-korunáčiek je 1")
+    elif x[-1] == "7":
+        print(f"počet 2-korunáčiek je 1")
+        print(f"počet 5-korunáčiek je 1")
+    elif x[-1] == "8":
+        print(f"počet 1-korunáčiek je 1")
+        print(f"počet 2-korunáčiek je 1")
+        print(f"počet 5-korunáčiek je 1")
+    elif x[-1] == "9":
+        print(f"počet 2-korunáčiek je 2")
+        print(f"počet 5-korunáčiek je 1")
+    if x[-2] == "1":
+        print(f"počet 10-korunáčiek je 1")
+    elif x[-2] == "2":
+        print(f"počet 20-korunáčiek je 1")
+    elif x[-2] == "3":
+        print(f"počet 10-korunáčiek je 1")
+        print(f"počet 20-korunáčiek je 1")
+    elif x[-2] == "4":
+        print(f"počet 20-korunáčiek je 2")
+    elif x[-2] == "5":
+        print(f"počet 50-korunáčiek je 1")
+    elif x[-2] == "6":
+        print(f"počet 10-korunáčiek je 1")
+        print(f"počet 50-korunáčiek je 1")
+    elif x[-2] == "7":
+        print(f"počet 20-korunáčiek je 1")
+        print(f"počet 50-korunáčiek je 1")
+    elif x[-2] == "8":
+        print(f"počet 10-korunáčiek je 1")
+        print(f"počet 20-korunáčiek je 1")
+        print(f"počet 50-korunáčiek je 1")
+    elif x[-2] == "9":
+        print(f"počet 20-korunáčiek je 2")
+        print(f"počet 50-korunáčiek je 1")
+    if x[-3] == "1":
+        print(f"počet 100-korunáčiek je 1")
+    elif x[-3] == "2":
+        print(f"počet 200-korunáčiek je 1")
+    elif x[-3] == "3":
+        print(f"počet 100-korunáčiek je 1")
+        print(f"počet 200-korunáčiek je 1")
+    elif x[-3] == "4":
+        print(f"počet 200-korunáčiek je 2")
+    elif x[-3] == "5":
+        print(f"počet 500-korunáčiek je 1")
+    elif x[-3] == "6":
+        print(f"počet 100-korunáčiek je 1")
+        print(f"počet 500-korunáčiek je 1")
+    elif x[-3] == "7":
+        print(f"počet 200-korunáčiek je 1")
+        print(f"počet 500-korunáčiek je 1")
+    elif x[-3] == "8":
+        print(f"počet 100-korunáčiek je 1")
+        print(f"počet 200-korunáčiek je 1")
+        print(f"počet 500-korunáčiek je 1")
+    elif x[-3] == "9":
+        print(f"počet 200-korunáčiek je 2")
+        print(f"počet 500-korunáčiek je 1")
+    if x[-4] == "1":
+        print(f"počet 1000-korunáčiek je 1")
+    elif x[-4] == "2":
+        print(f"počet 2000-korunáčiek je 1")
+    elif x[-4] == "3":
+        print(f"počet 1000-korunáčiek je 1")
+        print(f"počet 2000-korunáčiek je 1")
+    elif x[-4] == "4":
+        print(f"počet 2000-korunáčiek je 2")
+    elif x[-4] == "5":
+        print(f"počet 5000-korunáčiek je 1")
+    elif x[-4] == "6":
+        print(f"počet 1000-korunáčiek je 1")
+        print(f"počet 5000-korunáčiek je 1")
+    elif x[-4] == "7":
+        print(f"počet 2000-korunáčiek je 1")
+        print(f"počet 5000-korunáčiek je 1")
+    elif x[-4] == "8":
+        print(f"počet 1000-korunáčiek je 1")
+        print(f"počet 2000-korunáčiek je 1")
+        print(f"počet 5000-korunáčiek je 1")
+    elif x[-4] == "9":
+        print(f"počet 2000-korunáčiek je 2")
+        print(f"počet 5000-korunáčiek je 1")
+
+else:
+    y = x[-pocet:-4]
+    print(y)
+    print(type(y))
+    z = list(y)
+    print(z)
+    e = z[0] + z[1]
+    print(e)
+
+    for i in y:
+        int(i)
+
+    suma = 0
+    for i in y:
+        suma = suma + i
+    print(suma)
+
+"""
+    print("5-ciferne")
+    print(x[-pocet:-4])"""
