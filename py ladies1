@@ -1,0 +1,30 @@
+#Funkcia výber
+
+"""def výber():
+    slovo = str(input("Napíš nejaké slovo: "))
+    n = int(input("Zadaj počet n: "))
+    print(f"Prvých {n} písmen zo slova {slovo} je {list(slovo[0:n])}")
+
+výber()"""
+
+"""
+def výber2(slovo:str):
+    n = int(input("Zadaj počet n: "))
+    print(f"Prvých {n} písmen zo slova {slovo} je {list(slovo[0:n])}")
+
+výber2("maminka")"""
+
+#Funkcia zhoda
+
+"""
+def zhoda(x):
+    print("zoznam je:", x)
+    prve = x[0]
+    posledne = x[-1]
+    if prve == posledne:
+        print("prvé a posledné číslo sú rovnaké")
+    else:
+        print("prvé a posledné číslo nie sú rovnaké")
+
+
+zhoda([4,5,8,9,4,7])"""
