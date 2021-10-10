@@ -1,0 +1,68 @@
+#Funkcia na rozmieňanie peňazí
+def banknotes_and_coins(x):
+    pocet_5000 = x // 5000
+
+    zvysok_5000 = x % 5000
+    pocet_2000 = zvysok_5000 // 2000
+
+    zvysok_2000 = zvysok_5000 % 2000
+    pocet_1000 = zvysok_2000 // 1000
+    zvysok_1000 = zvysok_2000 % 1000
+    pocet_500 = zvysok_1000 // 500
+    zvysok_500 = zvysok_1000 % 500
+    pocet_200 = zvysok_500 // 200
+    zvysok_200 = zvysok_500 % 200
+    pocet_100 = zvysok_200 // 100
+    zvysok_100 = zvysok_200 % 100
+    pocet_50 = zvysok_100 // 50
+    zvysok_50 = zvysok_100 % 50
+    pocet_20 = zvysok_50 // 20
+    zvysok_20 = zvysok_50 % 20
+    pocet_10 = zvysok_20 // 10
+    zvysok_10 = zvysok_20 % 10
+    pocet_5 = zvysok_10 // 5
+    zvysok_5 = zvysok_10 % 5
+    pocet_2 = zvysok_5 // 2
+    zvysok_2 = zvysok_5 % 2
+    pocet_1 = zvysok_2 // 1
+    if pocet_5000 > 0:
+        a = str(pocet_5000) + " x 5000,"
+    else: a = ""
+    if pocet_2000 > 0:
+        b = str(pocet_2000) + " x 2000,"
+    else: b = ""
+    if pocet_1000 > 0:
+        c = str(pocet_1000) + " x 1000,"
+    else: c = ""
+    if pocet_500 > 0:
+        d = str(pocet_500) + " x 500,"
+    else: d = ""
+    if pocet_200 > 0:
+        e = str(pocet_200) + " x 200,"
+    else: e = ""
+    if pocet_100 > 0:
+        f = str(pocet_100) + " x 100,"
+    else: f = ""
+    if pocet_50 > 0:
+        g = str(pocet_50) + " x 50,"
+    else: g = ""
+    if pocet_20 > 0:
+        h = str(pocet_20) + " x 20,"
+    else: h = ""
+    if pocet_10 > 0:
+        i = str(pocet_10) + " x 10,"
+    else: i = ""
+    if pocet_5 > 0:
+        j = str(pocet_5) + " x 5,"
+    else: j = ""
+    if pocet_2 > 0:
+        k = str(pocet_2) + " x 2,"
+    else: k = ""
+    if pocet_1 > 0:
+        l = str(pocet_1) + " x 1,"
+    else: l = ""
+    print(f"suma obsahuje: {a} {b} {c} {d} {e} {f} {g} {h} {i} {j} {k} {l}")
+    #print(f"Suma {x} obsahuje: {pocet_5000} x 5000, {pocet_2000} x 2000, {pocet_1000} x 1000, {pocet_500} x 500, \n "
+    #f"{pocet_200} x 200, {pocet_100} x 100, {pocet_50} x 50, {pocet_20} x 20, {pocet_10} x 10, {pocet_5} x 5, \n"
+          #f"{pocet_2} x 2, {pocet_1} x 1.")
+banknotes_and_coins(8888)
