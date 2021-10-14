@@ -1,0 +1,23 @@
+
+def telephone_number():
+    nazov = input(str("zadaj cislo:"))
+    cislo = list(nazov)
+
+    def nasobok(*cislo):
+
+        tel = []
+        for i in cislo:
+            if i == "a":
+                tel += "2"
+            else:
+                tel += i
+        return tel
+
+        def number(*tel):
+            z = ""
+            for i in tel:
+                z = z + i
+            return z
+            
+
+print(telephone_number())
