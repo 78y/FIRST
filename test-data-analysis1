@@ -1,0 +1,43 @@
+import unittest
+
+import list_analysis
+
+
+class TransformToStringTestCase(unittest.TestCase):
+    def test_transform_list(self):
+        input_data = [1, "a", 10.1]
+        self.assertEqual(
+            list_analysis.transform_items_to_string(input_data),
+            ["1", "a", "10.1"]
+        )
+    
+    def test_transform_not_list(self):
+        self.assertFalse(
+            list_analysis.transform_items_to_string(10)
+        )
+
+    def test_transform_string(self):
+        self.assertFalse(
+            list_analysis.transform_items_to_string("100")
+        )
+
+
+class TransformToIntTestCase(unittest.TestCase):
+    def test_transform_list(self):
+        input_data = ["10", 1, "40", 10.5]
+        self.assertEqual(
+            list_analysis.transform_items_to_int(input_data),
+            [10, 1, 40, 10]
+        )
+
+    def test_transform_not_list(self):
+        self.assertFalse(
+            list_analysis.transform_items_to_int("mrkev")
+        )
+
+    def test_transform_list_contains_invalid_values(self):
+        input_data = ["10", 1, "40", "a", 10.5, ["a", "c"]]
+        self.assertEqual(
+            list_analysis.transform_items_to_int(input_data),
+            [10, 1, 40, 10]
+        )
