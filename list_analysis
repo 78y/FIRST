@@ -1,0 +1,36 @@
+def count_occurences(data: list):
+    result = {}
+    for item in data:
+        if item not in result:
+            result[item] = 0
+        else:
+            result[item] += 1
+
+    return result
+
+
+def transform_items_to_string(data: list):
+    if not isinstance(data, list):
+        return False
+
+    return [str(x) for x in data]
+
+
+def transform_items_to_int(data: list):
+    if not isinstance(data, list):
+        return False
+
+    return [int(x) for x in data if can_be_casted_to_int(x)]
+
+
+def can_be_casted_to_int(value):
+    if isinstance(value, int):
+        return True
+
+    if isinstance(value, float):
+        return True
+
+    if isinstance(value, str) and value.isdigit():
+        return True
+
+    return False
