@@ -1,0 +1,9 @@
+# preveď číslo do dvojkovej sústavy
+
+a = int(input("Zadaj celé číslo: "))
+cislo = ""
+while a > 0:
+    znak = str(a % 2)
+    cislo = znak + cislo
+    a = a  // 2
+print(cislo)
