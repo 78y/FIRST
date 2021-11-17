@@ -1,0 +1,24 @@
+a = input( "zadaj číslo:")
+
+x = len(str(a)) == 10
+    #print("True1")
+
+y = int(a) % 11 == 0
+    #print ( "True2")
+
+b = str(a)
+#print(b)
+#print(b[2])
+
+    #print ( "True1")
+#else:
+    #print( "Číslo nie je rodné číslo")
+
+def ifMonth(b):
+    if b[2] == "0" or b[2] == "1" or b[2] == "5" or b[2] == "6":
+        return  True
+
+if x == True and y == True and ifMonth(b) == True:
+    print("Číslo je rodné číslo")
+else:
+    print("Číslo nie je rodné číslo")
