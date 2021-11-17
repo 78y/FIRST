@@ -1,0 +1,11 @@
+#a = 52.4
+#print(type(a))
+
+a = float(input("Zadaj teplotu v °C: "))
+#a = float(a)
+
+a_Kelvin = f" daná teplota je {a + 273.15} Kelvinov"
+print(a_Kelvin)
+
+a_Fahrenheit = f" daná teplota je {a*1.8 +32} stupňov Fahrenheit"
+print(a_Fahrenheit)
