@@ -1,0 +1,14 @@
+#a*x + b = c
+
+a = float(input("Zadaj argument a: "))
+b = float(input("Zadaj argument b: "))
+c = float(input("Zadaj argument c: "))
+
+if a != 0:
+    x = (c - b) / a
+    print(f"rovnica má jedno riešenie: {x}" )
+else:
+    if b == c:
+        print("rovnica má nekonečne veľa riešení")
+    elif b != c:
+        print("rovnica nemá riešenie")
