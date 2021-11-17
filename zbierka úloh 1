@@ -1,0 +1,15 @@
+a = 129708
+
+#if a%3 == 0:
+    #print(f"číslo je deliteľné 3-oma")
+x = a % 3 == 0
+b = str(a)
+#print(b)
+#print(type(b))
+#print(b[-1])
+#if b[-1] == "8":
+    #print(f"číslo končí cifrou 8")
+y = b[-1] == "8"
+
+if x == True and y == True:
+    print( f"číslo a je delliteľné 3-oma a končí cifrou 8")
