@@ -1,0 +1,34 @@
+#aritmetický priemer známok
+
+#d=s/p
+
+
+
+
+p = 0
+s = 0
+d = 0
+i = int(input("Zadaj 1. známku: "))
+
+if i != 0:
+    while i != 0:
+
+        s = s+i
+        p  = p+1
+        d = s/p
+        i = int(input(f"Zadaj {p+1}. známku: "))
+
+
+    print(f"aritmetický priemer známok je {d}")
+
+# sucet = 0
+# pocet = 0
+# znamka = int(input("Zadaj {}. známku: ".format(pocet + 1)))
+# while znamka != 0:
+#     pocet = pocet + 1
+#     sucet = sucet + znamka
+#     znamka = int(input("Zadaj {}. známku: ".format(pocet + 1)))
+# if pocet > 0:
+#     print("Aritmetický priemer známok je ", sucet / pocet)
+# else:
+#     print("Nezadal si žiadnu známku!")
